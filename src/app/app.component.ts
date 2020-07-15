@@ -5,6 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'my-dream-app';
+  nome = '';
+
+  adicionar(nome : string) {
+    console.log(nome);
+
+    this.nome = nome + " - adicionado";
+  }
 }
