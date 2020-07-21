@@ -1,0 +1,12 @@
+<div class="alert alert-primary" role="alert" *ngIf="adicionado">
+    Olá {{nome}}
+</div>
+
+<div class="form-group">
+    <label>Nome</label>
+    <input type="text" class="form-control" [(ngModel)]="nome" #nomeInput
+        (focus)="adicionado = false">
+</div>
+
+<button type="button" class="btn btn-primary" 
+    (click)="adicionar(nomeInput.value)" [disabled]="nome.length == 0">Adicionar</button>
