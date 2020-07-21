@@ -22,7 +22,7 @@ export class FuncionarioCardComponent {
 
   getEstilosCartao() {
     return {
-      'background-color': this.funcionarioCard.id % 2 == 0 ? 'lightblue' : 'lightgreen'
+      'background-color': this.funcionarioCard.id % 2 === 0 ? 'lightblue' : 'lightgreen'
     };
   }
 }

@@ -6,19 +6,19 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./funcionario-form.component.css']
 })
 export class FuncionarioFormComponent {
-  
+
   ultimoId = 0;
   nome = '';
   adicionado = false;
   @Output() funcionarioAdicionado = new EventEmitter();
 
-  adicionar(nome : string) {
+  adicionar(nome: string) {
     console.log(nome);
 
-    ++this.ultimoId
-   // this.nome = this.ultimoId + " - " + nome;
+    ++this.ultimoId;
+    // this.nome = this.ultimoId + " - " + nome;
     this.adicionado = true;
-    
+
     const funcionario = {
       id: this.ultimoId,
       nome: this.nome
