@@ -9,8 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   funcionarios = [];
-  
+
   aoAdicionar(funcionario) {
+//    console.log(funcionario);
     this.funcionarios.push(funcionario);
   }
 }
