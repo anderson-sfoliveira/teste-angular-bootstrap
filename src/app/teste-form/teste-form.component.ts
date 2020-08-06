@@ -4,7 +4,7 @@ import { NgForm } from '@angular/forms';
 class Cliente {
   nome: string;
   email: string;
-  profissao = 'Empresário'; // para o campo ter um valor padrão
+  profissao: string; // para o campo ter um valor padrão
 }
 
 @Component({
@@ -23,6 +23,7 @@ export class TesteFormComponent {
     //this.cliente.profissao = form.value.profissao;
 
     console.log(form.value);
+    console.log(form.valid);
     console.log(this.cliente);
   }
 
