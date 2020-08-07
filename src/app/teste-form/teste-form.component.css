@@ -1,0 +1,6 @@
+/*
+  esse estilo é aplicado nos componentes input que tenham a classe ng-invalid E ng-touched.
+input.ng-invalid.ng-touched, select.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+*/

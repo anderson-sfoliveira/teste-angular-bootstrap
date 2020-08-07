@@ -11,12 +11,11 @@
   <form autocomplete="off" #usuarioForm="ngForm" (ngSubmit)="salvar(usuarioForm)">
     <div class="form-group">
       <label class="form-control-label">Nome</label>
-      <input type="text" class="form-control" name="primeiroNome" [(ngModel)]="cliente.nome"
-        required minlength="5" #nome="ngModel">
+      <input type="text" class="form-control" name="primeiroNome" [(ngModel)]="cliente.nome" required minlength="5" #nome="ngModel">
 
-      Touched: {{ nome.touched }} <br>
-      Pristine: {{ nome.pristine }} <br>
-      Dirty: {{ nome.dirty }}
+      Touched ( propriedade fica true quando o campo é tocado, ou seja, recebeu e perdeu o cursor ): {{ nome.touched }} <br>
+      Pristine ( propriedade fica true quando o campo está intocado, ou seja, não foi digitado nada ): {{ nome.pristine }} <br>
+      Dirty ( propriedade fica true quando o campo está alterado, ou seja, já foi digitado algo ): {{ nome.dirty }}
 
       <div *ngIf="nome.hasError('required') && nome.touched">Informe um nome</div>
       <div *ngIf="nome.hasError('minlength') && nome.touched">Informe o nome completo</div>
@@ -24,20 +23,16 @@
 
     <div class="form-group">
       <label class="form-control-label">E-mail</label>
-      <input type="text" class="form-control" name="emailAdress" [(ngModel)]="cliente.email"
-        email #email="ngModel">
-
+      <input type="text" class="form-control" name="emailAdress" [(ngModel)]="cliente.email" required email #email="ngModel">
       <div *ngIf="email.hasError('email') && nome.touched">Informe um e-mail válido</div>
     </div>
 
     <div class="form-group">
       <label class="form-control-label">Profissão</label>
-      <select class="form-control" name="profissao" [(ngModel)]="cliente.profissao"
-        required #profissao="ngModel">
+      <select class="form-control" name="profissao" [(ngModel)]="cliente.profissao" required #profissao="ngModel">
         <option value="">Selecione</option>
         <option *ngFor="let p of profissoes" value="{{ p }}">{{ p }}</option>
       </select>
-
       <div *ngIf="profissao.invalid && nome.touched">Selecione uma profissão</div>
     </div>
 
