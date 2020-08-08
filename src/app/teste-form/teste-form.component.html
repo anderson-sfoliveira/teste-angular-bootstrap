@@ -9,7 +9,7 @@
   </div>
 
   <form autocomplete="off" #usuarioForm="ngForm" (ngSubmit)="salvar(usuarioForm)">
-    <div class="form-group">
+    <div class="form-group" [class.was-validated]="nome.invalid && nome.touched">
       <label class="form-control-label">Nome</label>
       <input type="text" class="form-control" name="primeiroNome" [(ngModel)]="cliente.nome" required minlength="5" #nome="ngModel">
 
@@ -17,23 +17,23 @@
       Pristine ( propriedade fica true quando o campo está intocado, ou seja, não foi digitado nada ): {{ nome.pristine }} <br>
       Dirty ( propriedade fica true quando o campo está alterado, ou seja, já foi digitado algo ): {{ nome.dirty }}
 
-      <div *ngIf="nome.hasError('required') && nome.touched">Informe um nome</div>
-      <div *ngIf="nome.hasError('minlength') && nome.touched">Informe o nome completo</div>
+      <div class="invalid-feedback" *ngIf="nome.hasError('required') && nome.touched">Informe um nome</div>
+      <div class="invalid-feedback" *ngIf="nome.hasError('minlength') && nome.touched">Informe o nome completo</div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group" [class.was-validated]="email.invalid && email.touched">
       <label class="form-control-label">E-mail</label>
-      <input type="text" class="form-control" name="emailAdress" [(ngModel)]="cliente.email" required email #email="ngModel">
-      <div *ngIf="email.hasError('email') && nome.touched">Informe um e-mail válido</div>
+      <input type="email" class="form-control" name="emailAdress" [(ngModel)]="cliente.email" required email #email="ngModel">
+      <div class="invalid-feedback" *ngIf="email.invalid && email.touched">Informe um e-mail válido</div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group" [class.was-validated]="profissao.invalid && profissao.touched">
       <label class="form-control-label">Profissão</label>
       <select class="form-control" name="profissao" [(ngModel)]="cliente.profissao" required #profissao="ngModel">
         <option value="">Selecione</option>
         <option *ngFor="let p of profissoes" value="{{ p }}">{{ p }}</option>
       </select>
-      <div *ngIf="profissao.invalid && nome.touched">Selecione uma profissão</div>
+      <div class="invalid-feedback" *ngIf="profissao.invalid && profissao.touched">Selecione uma profissão</div>
     </div>
 
     <button type="submit" class="btn btn-primary" [disabled]="!usuarioForm.valid">Salvar</button>
