@@ -25,6 +25,8 @@ export class TesteFormComponent {
     console.log(form.value);
     console.log(form.valid);
     console.log(this.cliente);
+
+    form.reset({ profissaoForm: '' });
   }
 
 }

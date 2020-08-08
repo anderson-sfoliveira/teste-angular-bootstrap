@@ -29,7 +29,7 @@
 
     <div class="form-group" [class.was-validated]="profissao.invalid && profissao.touched">
       <label class="form-control-label">Profissão</label>
-      <select class="form-control" name="profissao" [(ngModel)]="cliente.profissao" required #profissao="ngModel">
+      <select class="form-control" name="profissaoForm" [(ngModel)]="cliente.profissao" required #profissao="ngModel">
         <option value="">Selecione</option>
         <option *ngFor="let p of profissoes" value="{{ p }}">{{ p }}</option>
       </select>
