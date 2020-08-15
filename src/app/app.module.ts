@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
-import { BemVindoComponent } from './bem-vindo/bem-vindo.component';
 import { FuncionarioCardComponent } from './funcionario-card/funcionario-card.component';
 import { FuncionarioFormComponent } from './funcionario-form/funcionario-form.component';
 import { CampoColoridoDirective } from './campo-colorido.directive';
@@ -15,7 +14,6 @@ import { TesteFormComponent } from './teste-form/teste-form.component';
   declarations: [
     AppComponent,
     HelloComponent,
-    BemVindoComponent,
     FuncionarioCardComponent,
     FuncionarioFormComponent,
     CampoColoridoDirective,
