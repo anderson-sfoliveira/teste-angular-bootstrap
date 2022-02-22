@@ -1,9 +1,9 @@
 <h1 align="center">
-  Projeto para testes
+  Projeto para testes em geral
 </h1>
 
 <h4 align="center">
-	🚧 Concluído 🚧
+	🚧 Em constante construção 🚧
 </h4>
 
 Índice
@@ -20,7 +20,7 @@
 
 ## 💻 Sobre o projeto
 
-Projeto desenvolvido para realizar testes em geral.
+Projeto criado para realizar testes em geral.
 
 ---
 
@@ -59,6 +59,7 @@ $ ng serve
 As seguintes ferramentas foram usadas na construção do projeto:
 
 -   **[Angular](https://angular.io/)**
+-   **[Bootstrap](https://getbootstrap.com/)**
 
 > Veja o arquivo  [package.json](https://github.com/anderson-sfoliveira/my-dream-app/blob/master/package.json)
 
