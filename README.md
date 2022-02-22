@@ -37,10 +37,10 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ```bash
 
 # Clone este repositório
-$ git clone https://github.com/anderson-sfoliveira/my-dream-app.git
+$ git clone https://github.com/anderson-sfoliveira/teste-angular-bootstrap.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd my-dream-app
+$ cd teste-angular-bootstrap
 
 # Instale as dependências
 $ npm install
@@ -61,7 +61,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[Angular](https://angular.io/)**
 -   **[Bootstrap](https://getbootstrap.com/)**
 
-> Veja o arquivo  [package.json](https://github.com/anderson-sfoliveira/my-dream-app/blob/master/package.json)
+> Veja o arquivo  [package.json](https://github.com/anderson-sfoliveira/teste-angular-bootstrap/blob/master/package.json)
 
 ---
 
