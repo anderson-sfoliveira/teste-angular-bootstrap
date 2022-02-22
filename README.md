@@ -20,7 +20,7 @@
 
 ## 💻 Sobre o projeto
 
-Projeto desenvolvido para realizar testes em projeto Angular.
+Projeto desenvolvido para realizar testes em geral.
 
 ---
 
