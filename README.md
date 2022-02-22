@@ -1,5 +1,5 @@
 <h1 align="center">
-  ...
+  Projeto para testes
 </h1>
 
 <h4 align="center">
@@ -20,7 +20,7 @@
 
 ## 💻 Sobre o projeto
 
-Projeto desenvolvido para .......... [__xxxxx__](xxxxxxxx).
+Projeto desenvolvido para realizar testes em projeto Angular.
 
 ---
 
@@ -59,7 +59,6 @@ $ ng serve
 As seguintes ferramentas foram usadas na construção do projeto:
 
 -   **[Angular](https://angular.io/)**
--   **[xxxxxxxx](xxxxxxxx)**
 
 > Veja o arquivo  [package.json](https://github.com/anderson-sfoliveira/my-dream-app/blob/master/package.json)
 
